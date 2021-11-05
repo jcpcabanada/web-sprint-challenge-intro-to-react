@@ -5,8 +5,8 @@ import Character from "./components/Character";
 import styled from "styled-components";
 
 const StyledHead = styled.div`
-  font-size: 100%;
-  color: #fff;
+  font-size: 150%;
+  padding-top: 5%;
 `
 
 const App = () => {
@@ -27,7 +27,7 @@ const App = () => {
             })
     }, [])
 
-    console.log(peopleData);
+    // console.log(peopleData);
 
 
     // Try to think through what state you'll need for this app before starting. Then build out
@@ -39,7 +39,7 @@ const App = () => {
     return (
         <div className="App">
             <StyledHead>
-                <h1 className="Header">REACT WARZ ></h1>
+                <a href="https://www.fontspace.com/category/star-wars"><img src="https://see.fontimg.com/api/renderfont4/oPoA/eyJyIjoiZnMiLCJoIjo0NywidyI6MTAwMCwiZnMiOjQ3LCJmZ2MiOiIjRUFEQjFEIiwiYmdjIjoiI0ZGRkZGRiIsInQiOjF9/UmVhY3QgV2FyeiA-/rebellion.png" alt="Star Wars fonts"/></a>
             </StyledHead>
             <Character characters={peopleData} />
         </div>
