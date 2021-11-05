@@ -2,6 +2,7 @@
 import React from "react";
 import styled from 'styled-components';
 
+
 const StyledName = styled.div`
   color: #ffffff;
   font-size: 150%;
